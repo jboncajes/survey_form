@@ -1,0 +1,152 @@
+body {
+  padding-top: 40px;
+  margin: 0 40px;
+}
+
+.chart-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 100%;
+  margin: 0;
+  flex: 1;
+  justify-content: center;
+}
+
+.chart-item {
+  width: calc(25% - 40px);
+  min-width: 150px;
+  margin-top: 10px;
+  padding: 10px 10px;
+  text-align: center;
+}
+
+.chart-item h2 {
+  font-size: 18px;
+}
+
+canvas {
+  width: 100%;
+  max-height: 200px;
+}
+
+.survey-table {
+  width: 90%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  margin-left: 0;
+}
+
+.survey-table th,
+.survey-table td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.survey-table th {
+  background-color: #798fd8;
+  font-weight: bold;
+}
+
+.survey-table tr:nth-child(odd) {
+  background-color: #a8c3db;
+}
+
+.survey-table tr:nth-child(even) {
+  background-color: #ede7e7;
+}
+
+.survey-table tr:hover {
+  background-color: #95a0f1;
+}
+
+.dataTables_wrapper {
+  margin-top: 30px;
+}
+
+.dataTables_length,
+.dataTables_filter,
+.dataTables_paginate {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.dataTables_paginate {
+  text-align: right;
+}
+
+.dataTables_paginate .paginate_button.previous:hover,
+.dataTables_paginate .paginate_button.next:hover,
+.dataTables_paginate .paginate_button:hover > a,
+.dataTables_paginate .paginate_button:hover > span {
+  background-color: #95a0f1;
+  color: #000;
+}
+
+.dataTables_info {
+  font-size: 16px;
+}
+
+.dashboard-content {
+  display: flex;
+  margin: 0;
+}
+
+.survey-info-card {
+  width: 30%;
+  height: auto;
+  padding: 5px 10px;
+  background-color: #f0f0f0;
+  margin-top: 40px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px #536b78;
+}
+
+.survey-info-card h3 {
+  font-size: 24px;
+  font-weight: bold;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+}
+
+.survey-info-card p {
+  font-style: italic;
+  text-align: justify;
+  height: auto;
+}
+
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+@media (max-width: 767px) {
+  .survey-table th,
+  .survey-table td {
+    font-size: 10px;
+  }
+
+  .survey-info-card {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .survey-info-card h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+
+  .survey-info-card p {
+    font-size: 14px;
+  }
+
+  .survey-info-card hr {
+    margin: 0 auto;
+    width: 80%;
+  }
+}
